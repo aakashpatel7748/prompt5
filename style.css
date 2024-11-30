@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+main > img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    display: flex;
+    gap: 40px;
+    color: rgb(255, 248, 248);
+}
+nav > i{
+    font-size: 40px;
+}
+
+.content{
+  display: flex;
+  gap: 50px;
+  padding: 3% 0;
+}
+
+.content>a{
+    font-size: 20px;
+}
+
+.image{
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+.image > img{
+    width: 100%;
+}
+
+.content2{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.content2 > h1{
+   font-size: 50px;
+   font-weight: 900;
+   
+}
+.content2 > h1 > span{
+    color: rgb(86, 83, 63);
+}
+.content2 > p {
+    font-size: 20px;
+    padding: 3% 0;
+}
+.content2 > button{
+    padding: 8px 10px;
+    margin: 2% 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.content-3{
+    width: 89%;
+    height: 12%;
+    background-color: rgb(184, 128, 44);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    
+}
+.footer1{
+    /* width: 30%; */
+   /* padding: 0 3%; */
+   margin-right: 100px;
+   /* background-color: rgb(128, 122, 122); */
+}
+
+.footer1 > h4{
+
+}
+.footer2{
+    /* width: 30%; */
+    /* padding: 2% 3%; */
+    margin-right: 100px;
+  
+    /* background-color: rgb(100, 95, 48); */
+}
+
+.footer3{
+    /* width: 30%; */
+    /* padding: 2% 3%; */
+    margin-right: 100px;
+    /* background-color: rgb(128, 122, 122) ; */
+}
+
+
+.photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.photo > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* ===============responsive===== */
+
+@media (max-width:600px){
+    html, body{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    main{
+        width: 200%;
+        height: 200%;
+       
+    }
+    main > img{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .content-3{
+        /* width: 89%;
+        height: 12%; */
+        position: absolute;
+        top: 150%;
+        left: 20%;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-3 > .photo{
+        display: flex;
+        flex-direction: column;
+       
+        color: rgb(36, 31, 31);
+        /* transform: translate(); */
+    }
+}
